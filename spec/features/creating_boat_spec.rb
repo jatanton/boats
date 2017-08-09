@@ -6,9 +6,9 @@ RSpec.feature 'Creating Boats ...' do
     visit '/'
     click_link 'Create Boat'
 
-    fill_in 'Manufacturer', with: 'J/Boats'
-    fill_in 'Model', with: 'J/105'
-    fill_in 'Price', with: 200000
+    fill_in 'Manufacturer', with: 'Catalina'
+    fill_in 'Model', with: '22'
+    fill_in 'Price', with: 20000
     #fill_in 'Currency', with: 'USD'
     fill_in 'LWL', with: 8.99
     fill_in 'Beam', with: 3.35

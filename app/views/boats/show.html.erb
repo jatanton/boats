@@ -1,2 +1,19 @@
-<h1>Boats#show</h1>
-<p>Find me in app/views/boats/show.html.erb</p>
+<h1>Show Boat :-)</h1>
+<h4>
+  <ul>
+    <li><%= "Manufacturer: #{@boat.manufacturer}" %></li>
+    <li><%= "Model: #{@boat.model}" %></li>
+    <li><%= "Price: #{@boat.price}" %></li>
+    <li><%= "LWL: #{@boat.lwl}" %></li>
+    <li><%= "Beam: #{@boat.beam}" %></li>
+    <li><%= "Displacement: #{@boat.displacement}" %></li>
+    <li><%= "Ballast: #{@boat.ballast}" %></li>
+    <li><%= "Ballast Ratio: #{@boat.ballast_ratio}" %></li>
+    <li><%= "Displacment Ratio: #{@boat.displacement_length_ratio}" %></li>
+
+  </ul>
+</h4>
+
+<%= link_to 'Edit', edit_boat_path(@boat) %>
+
+

@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170807004550) do
+ActiveRecord::Schema.define(version: 20170807052541) do
 
   create_table "boats", force: :cascade do |t|
     t.string   "manufacturer", limit: 255
     t.string   "model",        limit: 255
-    t.integer  "price",        limit: 4
+    t.integer  "price_cents",  limit: 4
     t.decimal  "lwl",                      precision: 2
     t.decimal  "beam",                     precision: 2
     t.integer  "displacement", limit: 4
